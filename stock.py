@@ -1,13 +1,7 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Aug  8 01:08:41 2023
 
-@author: DSN RAJU
-"""
 
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import yfinance as yf
 import datetime
 import streamlit as st
@@ -16,7 +10,8 @@ import model_building as m
 
 with st.sidebar:
     st.markdown("# Reliance Industries Stock Forecast")
-    user_input = st.multiselect('Please select the stock',['RELIANCE.NS'],['RELIANCE.NS'])
+    #user_input = st.multiselect('Please select the stock',['RELIANCE.NS'],['RELIANCE.NS'])
+    user_inpu = pd.read_csv('combined.csv')
 
     # user_input = st.text_input('Enter Stock Name', "RELIANCE.NS")
     st.markdown("### Choose Date for your anaylsis")
